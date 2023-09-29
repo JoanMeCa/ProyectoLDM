@@ -1,0 +1,11 @@
+.stylosindice {
+    text-align: center;
+    font-size: 50px;
+}
+.red {
+    color: blue;
+}
+.red:hover {
+    color: rgb(255, 0, 0);
+    transform: rotate(180deg);
+}
