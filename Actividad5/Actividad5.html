@@ -6,22 +6,22 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="">
+    <form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post">
         <fieldset>
             <legend>Rellena la tabla por favor</legend>
         <div style="margin-left: 15px;">
         <h1>INDIQUE SU NACIONALIDAD</h1>
             <div>
                 <input type="radio" name="idioma" id="ingles">
-                <label for="ingles">Inglés</label>
+                <label for="name">Inglés</label>
             </div>
             <div>
                 <input type="radio" name="idioma" id="aleman">
-                <label for="aleman">Alemán</label>
+                <label for="name">Alemán</label>
             </div>
             <div>
                 <input type="radio" name="idioma" id="frances">
-                <label for="frances">Francés (Ew)</label>
+                <label for="name">Francés (Ew)</label>
             </div>
         <br>
         <h1>Elija su dispositivo de memoria</h1>
@@ -35,52 +35,51 @@
         <h1>Introduzca su nombre y apellidos:</h1>
             <div>
             <label for="name">Nombre</label>
-            <input type="text" name="name" id="">
+            <input type="text" name="name" id="name">
             </div>
             <div>
             <label for="surname">Primer Apellido</label>
-            <input type="text" name="surname" id="">
+            <input type="text" name="surname" id="surname">
             </div>
             <div>
             <label for="surname1">Segundo Apellido</label>
-            <input type="text" name="surname1" id="">
+            <input type="text" name="surname1" id="surname1">
             </div>
         <br>
         </div>
         </fieldset>
-    </form>
     <br>
-    <form action="">
         <fieldset>
             <legend>Los pronombres atacan de nuevo</legend>
         <h1>Indique su género/sexo/como narices quieran denominarlo hoy</h1>
             <label for="sex">Elija su sexo</label>
             <br>
-            <select multiple name="" id="">
+            <select multiple name="gender" id="gender">
                 <option value="man">Hombre</option>
                 <option value="woman">Mujer</option>
                 <option value="what">Helícoptero Apache de combate</option>
             </select>
         <br>
         
-            <input type="checkbox">
-            <label for="Mujer">Mujer</label>
+            <input type="checkbox" name="woman" id="woman">
+            <label for="woman">Mujer</label>
             <br>
-            <input type="checkbox">
-            <label for="Hombre">Hombre</label>
+            <input type="checkbox" name="man" id="man">
+            <label for="man">Hombre</label>
             <br>
-            <input type="checkbox">
-            <label for="Helicoptero">Ser celestial</label>
+            <input type="checkbox" name="god" id="god">
+            <label for="god">Ser celestial</label>
         <p>Rostro de aquel que selecciona las 3 opciones:</p>
         <img src="../Imagenes/Helichad.jpg" alt="">
         <br>
         <a href="../index.html">Has visto la grandeza, puedes volver</a>
         <br><br><br>
-            <label for="">Seleccione una fecha, la que quieras</label>
-            <input type="date">
+            <label for="date">Seleccione una fecha, la que quieras</label>
+            <input type="date" name="date" id="date">
         
         <br>
         </fieldset>
-    </form> 
+        <input type="submit" value="matame">
+    </form>
 </body>
 </html>
