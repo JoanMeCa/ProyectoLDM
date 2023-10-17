@@ -1,0 +1,28 @@
+.news {
+    background-color: #444;
+    font-family:  Calibri;
+    color: white;
+    text-align: center;
+}
+.new {
+    font-family: Arial;
+    margin: 20px;
+    border-bottom: solid black 3px;
+}
+.new img {
+    width: 100px;
+    height: auto;
+    justify-content: left;
+}
+.new h1 {
+    font-weight: bold;
+    color: blue;
+}
+.new a {
+    color: green;
+    text-decoration: none;
+}
+.new a:hover {
+    color: purple;
+    text-decoration: underline;
+}
