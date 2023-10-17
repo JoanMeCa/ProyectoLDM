@@ -1,0 +1,13 @@
+img {
+    max-width: 15%;
+    height: auto;
+  }
+.container {
+    display: flex;
+    flex-wrap: wrap; /* Envuelve las imágenes si no caben en una sola fila */
+  }
+  
+  /* Establece un espacio entre las imágenes si lo deseas */
+.container img {
+    margin: 10px; /* Ajusta el valor según tus preferencias */
+  }
