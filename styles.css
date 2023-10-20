@@ -9,3 +9,11 @@
     color: rgb(255, 0, 0);
     transform: rotate(180deg);
 }
+body {
+    background-color: white;
+    color: black;
+}
+.dark-mode {
+    background-color: black;
+    color: white;
+  }
