@@ -5,7 +5,7 @@ body {
 .dark-mode {
     background-color: black;
     color: white;
-  }
+  } /*Metí un modo nocturno porque por que no? Miyazaki se lo merece*/
 .dark-mode footer {
     background-color: rgb(60, 60, 60);  
 }
