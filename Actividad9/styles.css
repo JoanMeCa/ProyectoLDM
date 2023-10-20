@@ -18,7 +18,8 @@ h2 {
     margin-left: 20px;
 }
 ul {
-    /*Pides que "La llista ha de tenir marcadors en forma de cercle", sin embargo, ul ya es en forma de círculo??? En principio no hace falta poner nada*/
+    list-style: circle;
+    /*Hecho, en mi defensa, apenas se nota xd*/
     margin-left: 40px;
 }
 li {
