@@ -1,0 +1,54 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+.dark-mode {
+    background-color: black;
+    color: white;
+  } /*Metí un modo nocturno porque por que no? Miyazaki se lo merece*/
+.dark-mode .full-button {
+    background-color: white;
+    color: black;
+}
+body {
+    background-color: white;
+    color: black;
+}
+main {
+    text-align: center;
+    align-items: center;
+}
+.theband {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ajusta la altura según tus necesidades */
+    background-color: #f0f0f0; /* Color de fondo opcional */
+}
+.member {
+    border: solid black 2px;
+    margin: 5px;
+    width: 25%;
+    height: 33%;
+    background-color: white;
+}
+.dark-mode .member {
+    background-color: black;
+}
+.member:hover {
+    transition: 3s;
+    transform: scale(1.5);
+}
+.member img {
+    width: 35%;
+}
+footer {
+    text-align: center;
+    background-color: rgb(171, 171, 171);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.dark-mode footer {
+    background-color: rgb(60, 60, 60);  
+}
