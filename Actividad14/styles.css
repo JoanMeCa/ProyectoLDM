@@ -35,23 +35,35 @@ main {
 .dark-mode .member {
     border: solid white 2px;
 }
+.circle {
+    width: 100%;
+    background-color: #ccc; /* Color de fondo del círculo */
+    border-radius: 50%; /* Esto hace que el contenedor sea circular */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Esto recorta la imagen si es más grande que el círculo */
+  }
+  
+.circle img {
+    width: 100%; /* Asegura que la imagen se ajuste al círculo */
+    height: 100%;
+    border-radius: 50%; /* Esto hace que la imagen sea circular */
+  }
 .member {
     border: solid black 2px;
     margin: 5px;
-    width: 13%;
-    height: 33%;
+    width: 20%;
+    height: 50%;
     background-color: white;
-    transition: transform 3s;
+    transition: transform 0.5s;
 }
 .dark-mode .member {
     background-color: black;
 }
 .member:hover {
-    transition: 3s;
-    transform: scale(2.45);
-}
-.member img {
-    width: 35%;
+    transition: 0.5s;
+    transform: scale(1.05);
 }
 footer {
     text-align: center;
