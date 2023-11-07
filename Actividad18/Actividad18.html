@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Document</title>
+    <script>
+        function DarkMode() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+        }
+    </script>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="../Imagenes/DeezNuts.png" alt="">
+        </div>
+        <div class="text">
+            <p><a href="../index.html">Inicio</a></p>
+            <p><a href="">Libros</a></p>
+            <p><a href="">Ayuda</a></p>
+            <p><a href="">Shrek</a></p>
+        </div>
+        <div class="search">
+            <form>
+                <input type="text" placeholder="Buscar..." id="searchInput">
+            </form>
+        </div>
+    </nav>
+    <footer>
+        <button class="full-button" onclick="DarkMode()">Nocturno/Diurno</button>
+        <p>Deez Nuts 2023®</p>
+    </footer>
+</body>
+</html>
