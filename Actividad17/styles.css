@@ -6,17 +6,8 @@ body {
     margin: 0;
     background-color: black;
 }
-.mensaje2 {
-    display: none;
-}
-.mensaje3 {
-    display: none;
-}
-.mensaje4 {
-    display: none;
-}
-.mensaje5 {
-    display: none;
+.mensaje::after {
+    content: "1920px";
 }
 main {
     background-color: blue;
@@ -25,79 +16,31 @@ main {
     main {
         background-color: rgb(232, 28, 164);
     }
-    .mensaje1 {
-        display: none;
-    }
-    .mensaje2 {
-        display: block;
-    }
-    .mensaje3 {
-        display: none;
-    }
-    .mensaje4 {
-        display: none;
-    }
-    .mensaje5 {
-        display: none;
+    .mensaje::after {
+       content: "1600px";
     }
 }
 @media (max-width: 1280px) {
     main {
         background-color: green;
     }
-    .mensaje1 {
-        display: none;
-    }
-    .mensaje2 {
-        display: none;
-    }
-    .mensaje3 {
-        display: block;
-    }
-    .mensaje4 {
-        display: none;
-    }
-    .mensaje5 {
-        display: none;
+    .mensaje::after {
+        content: "1280px";
     }
 }
 @media (max-width: 800px) {
     main {
         background-color: red;
     }
-    .mensaje1 {
-        display: none;
-    }
-    .mensaje2 {
-        display: none;
-    }
-    .mensaje3 {
-        display: none;
-    }
-    .mensaje4 {
-        display: block;
-    }
-    .mensaje5 {
-        display: none;
-    }
+    .mensaje::after {
+        content: "800px";
+     }
 }
 @media (max-width: 640px) {
     main {
         background-color: yellow;
     }
-    .mensaje1 {
-        display: none;
-    }
-    .mensaje2 {
-        display: none;
-    }
-    .mensaje3 {
-        display: none;
-    }
-    .mensaje4 {
-        display: none;
-    }
-    .mensaje5 {
-        display: block;
-    }
+    .mensaje::after {
+        content: "640px";
+     }
 }
