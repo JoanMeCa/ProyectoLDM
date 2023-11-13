@@ -1,0 +1,72 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: white;
+    color: black;
+}
+nav {
+    background-color: blue;
+    display: flex;
+    justify-content: space-between;
+    margin: 0.3%;
+    padding: 20px;
+}
+nav input {
+    border-radius: 5px;
+}
+.menu {
+    display: flex;
+}
+.menu p {
+    margin: 2px;
+}
+.menu a {
+    text-decoration: none;
+    color: black;
+}
+.AboutUs {
+    display: flex;
+    margin: 5px;
+    align-items: center; 
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.AboutUs p,h2 {
+    margin-bottom: 20px;
+}
+.AboutUs img {
+    border-radius: 10px;
+}
+.imagenderecha img {
+    width: 100%;
+}
+.Services {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: aliceblue;
+}
+.tabla {
+    text-align: center;
+    margin: 10px;
+    width: 250px;
+    border: solid black 5px;
+    border-radius: 25px;
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s;
+}
+.tabla:hover {
+    transform: scale(1.2);
+    transition: 0.2s;
+}
+.tabla img{
+    width: 100%;
+}
