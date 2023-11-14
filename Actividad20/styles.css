@@ -10,17 +10,21 @@ nav {
     background-color: blue;
     display: flex;
     justify-content: space-between;
+    text-align: center;
+    align-items: center;
     margin: 0.3%;
-    padding: 20px;
+    padding: 1%;
 }
 nav input {
     border-radius: 5px;
+    width: 10%;
 }
 .menu {
     display: flex;
 }
 .menu p {
-    margin: 2px;
+    margin: 2%;
+    white-space: nowrap;
 }
 .menu a {
     text-decoration: none;
@@ -28,15 +32,15 @@ nav input {
 }
 .AboutUs {
     display: flex;
-    margin: 5px;
+    margin: 1%;
     align-items: center; 
     margin-left: 10%;
     margin-right: 10%;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
 .AboutUs p,h2 {
-    margin-bottom: 20px;
+    margin-bottom: 3%;
 }
 .AboutUs img {
     border-radius: 10px;
@@ -48,16 +52,16 @@ nav input {
     display: flex;
     align-items: center;
     text-align: center;
-    padding: 20px;
+    padding: 2%;
     justify-content: space-between;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 5%;
+    padding-bottom: 5%;
     background-color: aliceblue;
 }
 .tabla {
     text-align: center;
-    margin: 10px;
-    width: 250px;
+    margin: 1%;
+    width: 100%;
     border: solid black 5px;
     border-radius: 25px;
     box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.5);
@@ -70,7 +74,117 @@ nav input {
     transform: scale(1.2);
     transition: 0.2s;
 }
+.Portfolio .tabla:hover {
+    transform: scale(1.1);
+    transition: 0.2s;
+}
 .tabla img{
     width: 50%;
     margin-bottom: 5%;
+}
+.Portfolio {
+    display: flex;
+    justify-content: space-between;
+}
+.Portfolio .tabla {
+    margin: 3%;
+    width: 30%;
+    border-radius: 5px;
+}
+.Portfolio .tabla p,h2 {
+    margin-bottom: 5%;
+    margin-left:2%;
+    margin-right:2%;
+}
+.Portfolio .tabla img{
+    width:100%;
+}
+.Contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: aliceblue;
+}
+.Contact h2 {
+    margin: 1%;
+}
+.Contact label, input, textarea {
+    display: block;
+    align-items: center;
+    width: 100%;
+    margin: 2%;
+}
+form {
+    text-align: center;
+}
+.Contact input[type="text"] {
+    width: 1000px;
+}
+.Contact textarea {
+    height: 200px;
+}
+input[type="submit"]{
+    color: white;
+    background-color: blue;
+    height: 30px;
+}
+footer {
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding-bottom: 3%;
+}
+.flex {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 3%;
+    padding-top: 2%;
+}
+.flex div {
+    margin: 1%;
+}
+.flex p,h4,a {
+    margin-bottom: 2%;
+}
+footer div {
+    width: 100%;
+}
+.logos {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.logos img {
+    width: 10%;
+}
+@media screen and (max-height: 1367px) {
+    body {
+        max-width: 1024px; /* Establece el ancho máximo deseado para el cuerpo de la página */
+        margin: 0 auto; /* Centra el contenido en la página */
+        overflow-x: hidden; /* Evita la barra de desplazamiento horizontal si el contenido es demasiado ancho */
+    }
+    .menu{
+      display: none;  
+    }
+    nav::after {
+        content: "☰";
+        width: 75px;
+        font-size: 75px;
+    }
+    .Services {
+        display: flex;
+        flex-wrap: wrap; /* Crea 2 columnas por fila */
+        justify-content: space-between;
+    }
+    .tabla {
+        width:30%;
+        margin-left: 8%;
+        margin-right: 8%;
+        margin-bottom: 40px;
+        justify-content: center;
+    }
+    
 }
