@@ -6,6 +6,9 @@ body {
     background-color: white;
     color: black;
 }
+.titulo {
+    font-size: 50px;
+}
 nav {
     background-color: blue;
     display: flex;
@@ -49,14 +52,22 @@ nav input {
     width: 100%;
 }
 .Services {
+    padding-top: 5%;
+    align-items: center;
+    text-align: center;
+    background-color: aliceblue;
+}
+.flexeado {
     display: flex;
     align-items: center;
     text-align: center;
     padding: 2%;
     justify-content: space-between;
-    padding-top: 5%;
     padding-bottom: 5%;
-    background-color: aliceblue;
+}
+.Services .tabla {
+    width: 500px;
+    height: 400px;
 }
 .tabla {
     text-align: center;
@@ -71,7 +82,7 @@ nav input {
     margin-bottom: 5%;
 }
 .tabla:hover {
-    transform: scale(1.2);
+    transform: scale(1.15);
     transition: 0.2s;
 }
 .Portfolio .tabla:hover {
@@ -83,6 +94,9 @@ nav input {
     margin-bottom: 5%;
 }
 .Portfolio {
+    text-align: center;
+}
+.flexeando2 {
     display: flex;
     justify-content: space-between;
 }
@@ -136,6 +150,9 @@ footer {
     text-align: center;
     padding-bottom: 3%;
 }
+.ipad {
+    display: none;
+}
 .flex {
     display: flex;
     justify-content: space-between;
@@ -145,11 +162,6 @@ footer {
 }
 .flex div {
     margin: 1%;
-}
-.flex p,h4,a {
-    margin-bottom: 2%;
-}
-footer div {
     width: 100%;
 }
 .logos {
@@ -160,21 +172,31 @@ footer div {
 .logos img {
     width: 10%;
 }
-@media screen and (max-height: 1367px) {
+.vistaipad {
+    display: none;
+}
+.imagenoculta {
+    display: none;
+}
+@media screen and (max-width: 1024px) {
     body {
         max-width: 1024px; /* Establece el ancho máximo deseado para el cuerpo de la página */
         margin: 0 auto; /* Centra el contenido en la página */
         overflow-x: hidden; /* Evita la barra de desplazamiento horizontal si el contenido es demasiado ancho */
+        font-size: 150%;
     }
     .menu{
       display: none;  
+    }
+    nav input {
+        scale: 2;
     }
     nav::after {
         content: "☰";
         width: 75px;
         font-size: 75px;
     }
-    .Services {
+    .flexeado {
         display: flex;
         flex-wrap: wrap; /* Crea 2 columnas por fila */
         justify-content: space-between;
@@ -186,5 +208,94 @@ footer div {
         margin-bottom: 40px;
         justify-content: center;
     }
-    
+    .Contact input[type="text"] {
+        width: 600px;
+    }
+    .logos img {
+        width: 5%;
+    }
+    .flex div {
+        margin: 1%;
+        width: 100%;
+    }
+    .pc {
+        display: none;
+    }
+    .vistaipad {
+        display: block;
+        align-items: left;
+        text-align: left;
+        margin-left: 5%;
+    }
+    .logos {
+        margin-top: 2%;
+        display: flex;
+        justify-content: left;
+    }
+    .logo {
+        margin-right: 2%;
+    }
+    .flexeando2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .flexeando2 .tabla {
+        width: 50%;
+    }
+    .Services .tabla {
+        height: 500px;
+        width: 320px;
+    }
 }
+@media screen and (max-width: 431px) {
+    body {
+        max-width: 430px; /* Establece el ancho máximo deseado para el cuerpo de la página */
+        margin: 0 auto; /* Centra el contenido en la página */
+        overflow-x: hidden; /* Evita la barra de desplazamiento horizontal si el contenido es demasiado ancho */
+        font-size: 200%;
+    }
+    .barra{
+        display: none;  
+      }
+    .imagenderecha {
+        display: none;
+    }
+    .imagenoculta {
+        display: block;
+        align-items: center;
+        text-align: center;
+    }
+    .AboutUs {
+        text-align: center;
+    }
+    .imagenoculta img {
+        width: 80%;
+    }
+      .Services .tabla {
+        height: 100%;
+        width: 320px;
+    }
+    .Portfolio .tabla {
+        width: 80%;
+    }
+      .Contact input[type="text"] {
+          width: 300px;
+      }
+      .logos img {
+          width: 10%;
+      }
+    .flex {
+        display: flex;
+        flex-direction: column;
+
+    }
+    .vistaipad {
+        align-items: center;
+        text-align: center;
+    }
+    .logos {
+        justify-content: center;
+    }
+  }
