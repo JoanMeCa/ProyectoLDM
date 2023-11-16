@@ -5,11 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
+    <script>
+        function DarkMode() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+        }
+    </script>
 </head>
 <body>
     <header class="Inicio" id="Inicio">
         <nav>
-            <h1 class="logo">CIDETech</h1>
+            <button class="full-button" onclick="DarkMode()"><h1 class="logo">CIDETech</h1></button>
             <div class="menu">
                 <p><a href="#Inicio">Inicio</a></p>
                 <p><a href="#AboutUs">About Us</a></p>
@@ -132,7 +138,7 @@
             </div>
         </div>
         <div class="Rap">
-            <p>CideTech® | Diseñado por Mua</p>
+                <p>CideTech® | Diseñado por Mua</p>
         </div>
     </footer>
 </body>
