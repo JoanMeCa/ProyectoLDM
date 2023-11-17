@@ -299,6 +299,10 @@ footer {
     .logos {
         justify-content: center;
     }
+    .tabla:hover {
+        transform: scale(1.1);
+        transition: 0.2s;
+    }
     .Portfolio .tabla:hover {
         transform: scale(1.0);
         transition: 0.2s;
