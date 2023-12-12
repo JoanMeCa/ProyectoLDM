@@ -46,9 +46,14 @@ main {
     margin: none;
     padding: none;
 }
-.letra-grande {
-    font-size: 1.5em;
+p {
+    font-size: 1em; /* Tamaño de fuente por defecto */
 }
-.letra-pequeña {
-    font-size: 0.5em;
+
+p.letra-grande {
+    font-size: 1.5em; /* Tamaño de fuente grande */
+}
+
+p.letra-pequeña {
+    font-size: 0.5em; /* Tamaño de fuente pequeño */
 }

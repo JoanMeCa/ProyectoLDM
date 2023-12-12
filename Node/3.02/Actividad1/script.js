@@ -1,8 +1,13 @@
 function LetraGrande() {
-    var element = document.body;
-    element.classList.toggle("letra-grande");
+    var elements = document.querySelectorAll('main p');
+    elements.forEach(element => {
+        element.classList.toggle("letra-grande");
+    });
 }
+
 function LetraPequeña() {
-    var element = document.body;
-    element.classList.toggle("letra-pequeña");
+    var elements = document.querySelectorAll('main p');
+    elements.forEach(element => {
+        element.classList.toggle("letra-pequeña");
+    });
 }
