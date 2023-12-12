@@ -7,5 +7,10 @@ function crearElemento() {
 function eliminarElemento() {
     var contenedor = document.getElementById('contenedor');
     var elementos = contenedor.children;
-    contenedor.removeChild(elementos[elementos.length - 1]);
+    if (elementos.length > 0) {
+        // Eliminar el último elemento
+        contenedor.removeChild(elementos[elementos.length - 1]);
+    } else {
+        alert('No hay elementos para eliminar.');
+    }
 }
