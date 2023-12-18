@@ -32,5 +32,4 @@ document.addEventListener('DOMContentLoaded', function() {
     boton1.addEventListener('mouseout', function() {
         boton1.style.backgroundColor = '';
     });
-    
 });
