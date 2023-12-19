@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     mas.addEventListener('click', function () {
         const miyazakiPresence = Array.from(texto.querySelectorAll('p')).filter(parrafo =>
-            parrafo.textContent.includes('Miyazaki')
+            parrafo.textContent.includes('Miyazaki') || parrafo.textContent.length > 200
         );
 
         miyazakiPresence.forEach(function(parrafo) {
