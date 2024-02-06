@@ -1,0 +1,65 @@
+body {
+    background-color: white;
+    color: black;
+}
+.dark-mode {
+    background-color: black;
+    color: white;
+  } /*Metí un modo nocturno porque por que no? Miyazaki se lo merece*/
+.dark-mode footer {
+    background-color: rgb(60, 60, 60);  
+}
+.dark-mode .full-button {
+    background-color: white;
+    color: black;
+}
+nav {
+    background-color: rgb(185, 185, 185);
+    float: left;
+    width: 15%;
+    padding: none;
+    margin: none;
+}
+footer {
+    text-align: center;
+
+    background-color: rgb(171, 171, 171);
+    clear: both;
+}
+main {
+    background-color: rgb(158, 158, 158);
+    float: right;
+    width: 85%;
+}
+.container {
+    width: 300px;
+    height: 200px;
+    background-color: lightgray;
+}
+.full-button {
+    color: white; /* Color del texto del botón */
+    background-color: black;
+    border: none; /* Elimina el borde del botón */
+    cursor: pointer; /* Cambia el cursor al estilo de mano al pasar el ratón sobre el botón */
+    width: 15%;
+    height: 100%;
+    margin: none;
+    padding: none;
+}
+p {
+    font-size: 1em; /* Tamaño de fuente por defecto */
+}
+
+p.letra-grande {
+    font-size: 1.5em; /* Tamaño de fuente grande */
+}
+
+p.letra-pequeña {
+    font-size: 0.5em; /* Tamaño de fuente pequeño */
+}
+.custom-style {
+    background-color: #3498db; /* Color de fondo */
+    color: #ecf0f1; /* Color del texto */
+    font-size: 20px; /* Tamaño de letra */
+    /* Agrega otros estilos personalizados según tus preferencias */
+}

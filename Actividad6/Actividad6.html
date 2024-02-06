@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post">
+        <fieldset>
+        <legend>Indique sus preferencias por el amor de Dios</legend>
+        <div>
+            <label for="datebirth">Día de nacimiento</label>
+            <br>
+            <input type="date" name="datebirth" id="datebirth" required> 
+        </div>
+        <div>
+            <label for="imagen">Imagen de la persona</label>
+            <br>
+            <input type="file" name="imagen" id="imagen">
+        </div>
+        <div>
+            <input type="radio" name="modelo" id="modelo1">
+            <label for="modelo" >AMD</label>
+            <input type="radio" name="modelo" id="modelo2">
+            <label for="modelo">Intel I5</label>
+            <input type="radio" name="modelo" id="modelo3">
+            <label for="modelo">Intel I7</label>
+        </div>
+        </fieldset>
+        <fieldset>
+            <legend>Indique sus preferencias otra vez, se nos ha olvidado</legend>
+            <div>
+                <input type="radio" name="Mates" id="Mates">
+                <label for="Mates">Matemáticas</label>
+                <input type="radio" name="Historia" id="Historia">
+                <label for="Historia">Historia</label>
+                <input type="radio" name="Geografia" id="Geografia">
+                <label for="Geografia">Geografía</label>
+                <input type="radio" name="Lengua" id="Lengua">
+                <label for="Lengua">Lengua</label>
+            </div>
+            <div>
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre">
+                <br>
+                <label for="apellidos">Apellidos</label>
+                <input type="text" name="apellidos" id="apellidos">
+                <br>
+                <label for="direccion">Dirección</label>
+                <input type="text" name="direccion" id="direccion"> 
+            </div>
+            <div>
+                <label for="color">Elija un color (rosa es obviamente el mejor): </label>
+                <input type="color" name="color" id="color" required>
+            </div>
+            <div>
+                <textarea name="texto" id="texto" cols="30" rows="10" placeholder="Escriba aquí su texto"></textarea>
+            </div>
+            <div>
+                <label for="date1">Escoja otra fecha</label>
+                <br>
+                <input type="date" name="date1" id="date1" required>
+            </div>
+            <div>
+                <select name="idiomas" id="idiomas">
+                    <option value="ingles">Inglés</option>
+                    <option value="elfico">Élfico</option>
+                    <option value="catalán">Catalán</option>
+                    <option value="fallo">Ayuda estoy atrapado en</option>
+                    <option value="castellano">Castellano</option>
+                </select>
+            </div>
+            <div>
+                <label for="hora">Elija una hora</label>
+                <input type="time" name="hora" id="hora" required>
+            </div>
+            <div>
+                <label for="foto">Otra imagen por favor</label>
+                <br>
+                <input type="file" name="foto" id="foto">
+            </div>
+            <div>
+                <input type="checkbox" name="man" id="man">
+                <label for="man">Mujer</label>
+                <input type="checkbox" name="woman" id="woman">
+                <label for="woman">Hombre</label>
+                <input type="checkbox" name="god" id="god">
+                <label for="god">Helicóptero Apache de combate</label>
+            </div>
+        </fieldset>
+        <input type="submit" value="Enviar">
+    </form>
+    <a href="../index.html">Volver al inicio</a>
+</body>
+</html>

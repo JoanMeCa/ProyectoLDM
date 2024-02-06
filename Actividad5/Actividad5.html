@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post">
+        <fieldset>
+            <legend>Rellena la tabla por favor</legend>
+        <div style="margin-left: 15px;">
+        <h1>INDIQUE SU NACIONALIDAD</h1>
+            <div>
+                <input type="radio" name="idioma" id="ingles">
+                <label for="name">Inglés</label>
+            </div>
+            <div>
+                <input type="radio" name="idioma" id="aleman">
+                <label for="name">Alemán</label>
+            </div>
+            <div>
+                <input type="radio" name="idioma" id="frances">
+                <label for="name">Francés (Ew)</label>
+            </div>
+        <br>
+        <h1>Elija su dispositivo de memoria</h1>
+        <select id="memoria" name="memoria">
+            <option value="novalue"></option>
+            <option value="HD">Hard Drive</option>
+            <option value="SSD">SSD</option>
+            <option value="USB">USB</option>
+            <option value="patata">Patata</option>
+        </select>
+        <h1>Introduzca su nombre y apellidos:</h1>
+            <div>
+            <label for="name">Nombre</label>
+            <input type="text" name="name" id="name">
+            </div>
+            <div>
+            <label for="surname">Primer Apellido</label>
+            <input type="text" name="surname" id="surname">
+            </div>
+            <div>
+            <label for="surname1">Segundo Apellido</label>
+            <input type="text" name="surname1" id="surname1">
+            </div>
+        <br>
+        </div>
+        </fieldset>
+    <br>
+        <fieldset>
+            <legend>Los pronombres atacan de nuevo</legend>
+        <h1>Indique su género/sexo/como narices quieran denominarlo hoy</h1>
+            <label for="sex">Elija su sexo</label>
+            <br>
+            <select multiple name="gender" id="gender">
+                <option value="man">Hombre</option>
+                <option value="woman">Mujer</option>
+                <option value="what">Helícoptero Apache de combate</option>
+            </select>
+        <br>
+        
+            <input type="checkbox" name="woman" id="woman">
+            <label for="woman">Mujer</label>
+            <br>
+            <input type="checkbox" name="man" id="man">
+            <label for="man">Hombre</label>
+            <br>
+            <input type="checkbox" name="god" id="god">
+            <label for="god">Ser celestial</label>
+        <p>Rostro de aquel que selecciona las 3 opciones:</p>
+        <img src="../Imagenes/Helichad.jpg" alt="">
+        <br>
+        <a href="../index.html">Has visto la grandeza, puedes volver</a>
+        <br><br><br>
+            <label for="date">Seleccione una fecha, la que quieras</label>
+            <input type="date" name="date" id="date">
+        
+        <br>
+        </fieldset>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>

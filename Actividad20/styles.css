@@ -1,0 +1,334 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: white;
+    color: black;
+}
+.titulo {
+    font-size: 50px;
+}
+nav {
+    background-color: blue;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    margin: 0.3%;
+    padding: 1%;
+}
+nav input {
+    border-radius: 5px;
+    width: 10%;
+}
+.menu {
+    display: flex;
+}
+.menu p {
+    margin: 2%;
+    white-space: nowrap;
+}
+.menu a {
+    text-decoration: none;
+    color: black;
+}
+.AboutUs {
+    display: flex;
+    align-items: center; 
+    width: 100%;
+}
+.AboutUs p,h2 {
+    margin-bottom: 3%;
+}
+.AboutUs img {
+    border-radius: 10px;
+}
+.imagenderecha img {
+    width: 97%;
+    margin: 1%;
+}
+.Services {
+    padding-top: 5%;
+    align-items: center;
+    text-align: center;
+    background-color: aliceblue;
+}
+.flexeado {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 2%;
+    justify-content: space-between;
+    padding-bottom: 5%;
+}
+.Services .tabla {
+    width: 500px;
+    height: 400px;
+}
+.tabla {
+    text-align: center;
+    margin: 1%;
+    width: 100%;
+    border: solid black 5px;
+    border-radius: 25px;
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s;
+}
+.tabla h3 {
+    margin-bottom: 5%;
+}
+.tabla:hover {
+    transform: scale(1.15);
+    transition: 0.2s;
+}
+.Portfolio .tabla:hover {
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+.tabla img{
+    width: 50%;
+    margin-bottom: 5%;
+}
+.Portfolio {
+    text-align: center;
+}
+.flexeando2 {
+    display: flex;
+    justify-content: space-between;
+}
+.Portfolio .tabla {
+    margin: 3%;
+    width: 30%;
+    border-radius: 5px;
+}
+.Portfolio .tabla p,h2 {
+    margin-bottom: 5%;
+    margin-left:2%;
+    margin-right:2%;
+}
+.Portfolio .tabla img{
+    width:100%;
+}
+.Contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: aliceblue;
+}
+.Contact h2 {
+    margin: 1%;
+}
+.Contact label, input, textarea {
+    display: block;
+    align-items: center;
+    width: 100%;
+    margin: 2%;
+}
+form {
+    text-align: center;
+}
+.Contact input[type="text"] {
+    width: 1000px;
+}
+.Contact textarea {
+    height: 200px;
+}
+input[type="submit"]{
+    color: white;
+    background-color: blue;
+    height: 30px;
+}
+footer {
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding-bottom: 3%;
+}
+.ipad {
+    display: none;
+}
+.flex {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 3%;
+    padding-top: 2%;
+}
+.flex div {
+    margin: 1%;
+    width: 100%;
+}
+.logos {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.logos img {
+    width: 10%;
+}
+.vistaipad {
+    display: none;
+}
+.imagenoculta {
+    display: none;
+}
+.textoizquierda {
+    margin: 1%;
+}
+@media screen and (max-width: 1024px) {
+    body {
+        max-width: 1024px; 
+        margin: 0 auto;
+        font-size: 150%;
+    }
+    .menu{
+      display: none;  
+    }
+    nav input {
+        scale: 2;
+    }
+    nav::after {
+        content: "☰";
+        width: 75px;
+        font-size: 75px;
+    }
+    .flexeado {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .tabla {
+        width:30%;
+        margin-left: 8%;
+        margin-right: 8%;
+        margin-bottom: 40px;
+        justify-content: center;
+    }
+    .Contact input[type="text"] {
+        width: 600px;
+    }
+    .logos img {
+        width: 5%;
+    }
+    .flex div {
+        margin: 1%;
+        width: 100%;
+    }
+    .pc {
+        display: none;
+    }
+    .vistaipad {
+        display: block;
+        align-items: left;
+        text-align: left;
+        margin-left: 5%;
+    }
+    .logos {
+        margin-top: 2%;
+        display: flex;
+        justify-content: left;
+    }
+    .logo {
+        margin-right: 2%;
+    }
+    .flexeando2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .flexeando2 .tabla {
+        width: 50%;
+    }
+    .Services .tabla {
+        height: 500px;
+        width: 320px;
+    }
+}
+@media screen and (max-width: 431px) {
+    body {
+        max-width: 430px;
+        margin: 0 auto;
+        font-size: 200%;
+    }
+    .AboutUs {
+        width: 100%;
+    }
+    .barra{
+        display: none;  
+      }
+    .imagenderecha {
+        display: none;
+    }
+    .imagenoculta {
+        display: block;
+        align-items: center;
+        text-align: center;
+    }
+    .AboutUs {
+        text-align: center;
+    }
+    .imagenoculta img {
+        width: 80%;
+    }
+      .Services .tabla {
+        height: 100%;
+        width: 320px;
+    }
+    .Portfolio .tabla {
+        width: 80%;
+    }
+      .Contact input[type="text"] {
+          width: 300px;
+      }
+      .logos img {
+          width: 10%;
+      }
+    .flex {
+        display: flex;
+        flex-direction: column;
+
+    }
+    .vistaipad {
+        align-items: center;
+        text-align: center;
+    }
+    .logos {
+        justify-content: center;
+    }
+    .tabla:hover {
+        transform: scale(1.1);
+        transition: 0.2s;
+    }
+    .Portfolio .tabla:hover {
+        transform: scale(1.0);
+        transition: 0.2s;
+    }
+  }
+.dark-mode{
+    background-color: black;
+    color: white;
+  }
+.dark-mode .AboutUs {
+    background-color: black;
+    color: white;
+}
+.dark-mode .Portfolio {
+    background-color: black;
+    color: white;
+}
+.dark-mode .Contact {
+    background-color: rgb(34, 34, 34);
+    color: white;
+}
+.dark-mode .Services {
+    background-color: rgb(34, 34, 34);
+    color: white;
+}
+.dark-mode .Portfolio .tabla {
+    background-color: rgb(34, 34, 34);
+    border: solid white 5px;
+}

@@ -1,0 +1,59 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+.dark-mode {
+    background-color: black;
+    color: white;
+  }
+.dark-mode .letra {
+    background-color: black;
+    border: 2px solid white;
+}
+.dark-mode .full-button {
+    background-color: white;
+    color: black;
+}
+.dark-mode body {
+    background-color: black;
+    color: white;
+}
+body {
+    background-color: white;
+    color: black;
+}
+footer {
+    text-align: center;
+    background-color: rgb(171, 171, 171);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.dark-mode footer {
+    background-color: rgb(60, 60, 60);  
+}
+.catalogo {
+    background-color: rgba(128, 128, 128, 0.318);
+    margin-bottom: 45px;
+}
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+.letra:hover {
+    transform: scale(1.2);
+    transition: 0.2;
+}
+.letra {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid black;
+    transition: transform 0.2s;
+    margin: 0;
+}
+.letra img {
+    border-radius: 50%;
+    width: 15%;
+}

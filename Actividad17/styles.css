@@ -1,0 +1,46 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: black;
+}
+.mensaje::after {
+    content: "1920px";
+}
+main {
+    background-color: blue;
+}
+@media (max-width: 1600px) {
+    main {
+        background-color: rgb(232, 28, 164);
+    }
+    .mensaje::after {
+       content: "1600px";
+    }
+}
+@media (max-width: 1280px) {
+    main {
+        background-color: green;
+    }
+    .mensaje::after {
+        content: "1280px";
+    }
+}
+@media (max-width: 800px) {
+    main {
+        background-color: red;
+    }
+    .mensaje::after {
+        content: "800px";
+     }
+}
+@media (max-width: 640px) {
+    main {
+        background-color: yellow;
+    }
+    .mensaje::after {
+        content: "640px";
+     }
+}

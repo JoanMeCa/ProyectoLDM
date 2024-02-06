@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function DarkMode() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+        }
+    </script>
+</head>
+<body>
+    <header class="Inicio" id="Inicio">
+        <nav>
+            <button class="full-button" onclick="DarkMode()"><h1 class="logo">CIDETech</h1></button>
+            <div class="menu">
+                <p><a href="#Inicio">Inicio</a></p>
+                <p><a href="#AboutUs">About Us</a></p>
+                <p><a href="#Services">Services</a></p>
+                <p><a href="#Portfolio">Portfolio</a></p>
+                <p><a href="#Contact">Contact</a></p>
+            </div>
+            <input class="barra" type="text" placeholder="Buscar..." size="20">
+        </nav>
+    </header>
+    <div class="AboutUs" id="AboutUs">
+        <div class="textoizquierda">
+            <h2>About Us</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus quibusdam facilis, quasi amet natus, sed totam molestiae consequuntur distinctio eos iusto consectetur optio illo eligendi quae porro. Nam, iusto laudantium!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum cumque quis dicta incidunt fugiat rerum optio ex. Inventore nihil vel soluta culpa. Sint ab ullam totam repellat? Sunt, accusamus ullam.</p>
+        </div>
+        <div class="imagenderecha">
+            <img src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+        </div>
+    </div>
+    <div class="imagenoculta">
+        <img src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+    </div>
+    <div class="Services" id="Services">
+        <h2 class="titulo">Nuestros Servicios</h2>
+        <div class="flexeado">
+        <div class="tabla">
+            <img src="../Imagenes/vector.png" alt="">
+            <h3>Diseño gráfico</h3>
+            <p>Nuestros diseñadores gráficos diseñaron gráficamente los gráficos diseñados por los diseñadores gráficos que diseñaron los gráficos que los diseñadores gráficos diseñan gráficamente hoy en día.</p>
+        </div>
+        <div class="tabla">
+            <img src="../Imagenes/desarrollador-de-software.png" alt="">
+            <h3>Desarrollo Web</h3>
+            <p>Nuestros desarrolladores web desarrollan en la web diversos desarrollos web con el objetivo de desarrollar la web de desarrollo más desarrollada de las webs desarrolladas.</p>
+        </div>
+        <div class="tabla">
+            <img src="../Imagenes/megafono.png" alt="">
+            <h3>Markéting Digital</h3>
+            <p>Nuestro equipo de markéting digital trata de atraer con el uso del markéting a todo tipo de clientes digitales gracias al marketing digital que son capaces de realizar digitalmente.</p>
+        </div>
+        <div class="tabla">
+            <img src="../Imagenes/soporte-tecnico.png" alt="">
+            <h3>Soporte Técnico</h3>
+            <p>Nuestro soporte técnico soporta técnicamente esta empresa gracias a su soporte técnico más que soportable y técnico a la vez, volviendolo técnicosoportables.</p>
+        </div>
+    </div>
+    </div>
+    <div class="Portfolio" id="Portfolio">
+        <h2 class="titulo">Nuestro Portfolio</h2>
+        <div class="flexeando2">
+        <div class="tabla">
+            <img src="https://galiapuerto.es/wp-content/uploads/2020/03/20200325-Oficina.jpg" alt="">
+            <h2>Proyecto 1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure sed iusto itaque est asperiores placeat, tenetur nemo at illum voluptatem provident error obcaecati suscipit consectetur iste fuga neque quisquam non.</p>
+            <p><a href="">Link</a></p>
+        </div>
+        <div class="tabla">
+            <img src="https://galiapuerto.es/wp-content/uploads/2020/03/20200325-Oficina.jpg" alt="">
+            <h2>Proyecto 1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure sed iusto itaque est asperiores placeat, tenetur nemo at illum voluptatem provident error obcaecati suscipit consectetur iste fuga neque quisquam non.</p>
+            <p><a href="">Link</a></p>
+        </div>
+        <div class="tabla">
+            <img src="https://galiapuerto.es/wp-content/uploads/2020/03/20200325-Oficina.jpg" alt="">
+            <h2>Proyecto 1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure sed iusto itaque est asperiores placeat, tenetur nemo at illum voluptatem provident error obcaecati suscipit consectetur iste fuga neque quisquam non.</p>
+            <p><a href="">Link</a></p>
+        </div>
+        </div>
+    </div>
+    <div class="Contact" id="Contact">
+        <h2>Contáctanos</h2>
+        <p>Si tienes alguna duda, no dudes en rellenar el siguiente formulario:</p>
+        <form method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" id="correo" name="correo" required>
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+    <footer>
+        <div class="flex">
+            <div>
+                <h4>CideTech</h4>
+                <p>CideTech es una empresa que hace cosas de empresa y como empresa que es las cosas de empresa que hace son muy empresariales.</p>
+            </div>
+            <div>
+                <h4>Navegación</h4>
+                <p><a href="#Inicio">Inicio</a></p>
+                <p><a href="#AboutUs">About Us</a></p>
+                <p><a href="#Services">Services</a></p>
+                <p><a href="#Portfolio">Portfolio</a></p>
+                <p><a href="#Contact">Contact</a></p>
+            </div>
+            <div>
+                <h4>Contáctanos</h4>
+                <p>866-740-4531</p>
+                <p>realcompany@realmail.com</p>
+                <p>Calle Real 5, Palma</p>
+            </div>
+            <div class="pc">
+                <h4>Redes Sociales</h4>
+                <div class="logos">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Logo_of_Twitter.svg/512px-Logo_of_Twitter.svg.png" alt="">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png" alt="">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/2048px-2021_Facebook_icon.svg.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="vistaipad">
+            <h4>Redes Sociales</h4>
+            <div class="logos">
+                <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Logo_of_Twitter.svg/512px-Logo_of_Twitter.svg.png" alt="">
+                <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png" alt="">
+                <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/2048px-2021_Facebook_icon.svg.png" alt="">
+            </div>
+        </div>
+        <div class="Rap">
+                <p>CideTech® | Diseñado por Mua</p>
+        </div>
+    </footer>
+</body>
+</html>

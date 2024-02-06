@@ -1,0 +1,78 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+.dark-mode .full-button {
+    background-color: white;
+    color: black;
+}
+.dark-mode body {
+    background-color: black;
+    color: white;
+}
+body {
+    background-color: white;
+    color: black;
+    display: grid;
+    grid-template-columns: 1fr 3fr; 
+}
+aside, main {
+    height: 100%;
+}
+footer {
+    text-align: center;
+    background-color: rgb(171, 171, 171);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border: solid black 5px;
+}
+nav {
+    background-color: rgb(255, 0, 0);
+    border: solid black 5px;
+    grid-column: 1 / -1;
+}
+.dark-mode nav {
+    background-color: blue;
+}
+nav h1 {
+    color: white;
+    padding: 20px;
+}
+.dark-mode nav h1 {
+
+    grid-column: 1 / -1;
+    color: rgb(0, 0, 0);
+}
+aside {
+    background-color: purple;
+    line-height: 25px;
+    padding: 25px;
+    border: solid black 5px;
+    margin-bottom: 48px;
+}
+aside a {
+    text-decoration: none;
+    color: white;
+}
+.dark-mode aside {
+    background-color: green;
+    color: white;
+}
+.dark-mode main {
+    background-color: pink;
+    color: black;
+}
+main {
+    background-color: yellow;
+    padding: 10px;
+    border: solid black 5px;
+    margin-bottom: 48px;
+}
+main h2, h1 {
+    line-height: 45px;
+}
