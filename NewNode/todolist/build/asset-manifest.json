@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "joanmeca.github.io/ProyectoLDM/New%20Node/todolist/build/static/css/main.628e3091.css",
-    "main.js": "joanmeca.github.io/ProyectoLDM/New%20Node/todolist/build/static/js/main.758efbf0.js",
-    "static/js/592.fc2afc69.chunk.js": "joanmeca.github.io/ProyectoLDM/New%20Node/todolist/build/static/js/592.fc2afc69.chunk.js",
-    "index.html": "joanmeca.github.io/ProyectoLDM/New%20Node/todolist/build/index.html",
-    "main.628e3091.css.map": "joanmeca.github.io/ProyectoLDM/New%20Node/todolist/build/static/css/main.628e3091.css.map",
-    "main.758efbf0.js.map": "joanmeca.github.io/ProyectoLDM/New%20Node/todolist/build/static/js/main.758efbf0.js.map",
-    "592.fc2afc69.chunk.js.map": "joanmeca.github.io/ProyectoLDM/New%20Node/todolist/build/static/js/592.fc2afc69.chunk.js.map"
+    "main.css": "joanmeca.github.io/ProyectoLDM/NewNode/todolist/build/static/css/main.628e3091.css",
+    "main.js": "joanmeca.github.io/ProyectoLDM/NewNode/todolist/build/static/js/main.9601d7a2.js",
+    "static/js/592.fc2afc69.chunk.js": "joanmeca.github.io/ProyectoLDM/NewNode/todolist/build/static/js/592.fc2afc69.chunk.js",
+    "index.html": "joanmeca.github.io/ProyectoLDM/NewNode/todolist/build/index.html",
+    "main.628e3091.css.map": "joanmeca.github.io/ProyectoLDM/NewNode/todolist/build/static/css/main.628e3091.css.map",
+    "main.9601d7a2.js.map": "joanmeca.github.io/ProyectoLDM/NewNode/todolist/build/static/js/main.9601d7a2.js.map",
+    "592.fc2afc69.chunk.js.map": "joanmeca.github.io/ProyectoLDM/NewNode/todolist/build/static/js/592.fc2afc69.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.628e3091.css",
-    "static/js/main.758efbf0.js"
+    "static/js/main.9601d7a2.js"
   ]
 }
