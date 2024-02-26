@@ -1,0 +1,47 @@
+export const filas = [
+    {
+      producto: "Manzana",
+      cantidad: 2,
+      precio: 3.4,
+      tienda: "Mercadona",
+      notas: "Comprar 3",
+      comprado: true,
+      imagen: "https://i.pinimg.com/originals/61/d5/c1/61d5c14463ebfd4e9315812fc32c7cd3.png",
+    },
+    {
+        producto: "Plátano",
+        cantidad: 6,
+        precio: 1.0,
+        tienda: "Frutería FrutasFelices",
+        notas: "Seleccionar los más maduros",
+        comprado: false,
+        imagen: "https://i.pinimg.com/originals/39/ca/0e/39ca0e8f1bc2a9ed642dc3e4411802a8.png",
+    },
+    {
+        producto: "Lechuga",
+        cantidad: 1,
+        precio: 0.75,
+        tienda: "Verdulería El Huerto",
+        notas: "Descuento del 20%",
+        comprado: true,
+        imagen: "https://i.pinimg.com/originals/60/16/91/6016911336b4930bb9eda15b99ffad36.png",
+    },
+    {
+        producto: "Queso",
+        cantidad: 250, // en gramos
+        precio: 5.99,
+        tienda: "La Quesería",
+        notas: "Elegir variedad italiana",
+        comprado: false,
+        imagen: "https://i.pinimg.com/originals/ff/7f/cf/ff7fcf3092b1c30ea5a9a5aace2b4db4.png",
+    },
+    {
+        producto: "Pan integral",
+        cantidad: 1,
+        precio: 2.0,
+        tienda: "Panadería Saludable",
+        notas: "Sin azúcares añadidos",
+        comprado: true,
+        imagen: "https://static.vecteezy.com/system/resources/previews/010/175/167/original/sliced-whole-wheat-bread-cutout-file-png.png",
+    },
+  ];
