@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "https://joanmeca.github.io/ProyectoLDM/NewNode/segundo/build/static/css/main.d5289b2f.css",
+    "main.js": "https://joanmeca.github.io/ProyectoLDM/NewNode/segundo/build/static/js/main.a3395c20.js",
+    "static/js/453.7d329a1a.chunk.js": "https://joanmeca.github.io/ProyectoLDM/NewNode/segundo/build/static/js/453.7d329a1a.chunk.js",
+    "index.html": "https://joanmeca.github.io/ProyectoLDM/NewNode/segundo/build/index.html",
+    "main.d5289b2f.css.map": "https://joanmeca.github.io/ProyectoLDM/NewNode/segundo/build/static/css/main.d5289b2f.css.map",
+    "main.a3395c20.js.map": "https://joanmeca.github.io/ProyectoLDM/NewNode/segundo/build/static/js/main.a3395c20.js.map",
+    "453.7d329a1a.chunk.js.map": "https://joanmeca.github.io/ProyectoLDM/NewNode/segundo/build/static/js/453.7d329a1a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d5289b2f.css",
+    "static/js/main.a3395c20.js"
+  ]
+}
