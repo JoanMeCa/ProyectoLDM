@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.f51cd021.css",
-    "main.js": "/static/js/main.6d0e98d5.js",
-    "static/js/453.475c2ec3.chunk.js": "/static/js/453.475c2ec3.chunk.js",
-    "index.html": "/index.html",
-    "main.f51cd021.css.map": "/static/css/main.f51cd021.css.map",
-    "main.6d0e98d5.js.map": "/static/js/main.6d0e98d5.js.map",
-    "453.475c2ec3.chunk.js.map": "/static/js/453.475c2ec3.chunk.js.map"
+    "main.css": "https://joanmeca.github.io/ProyectoLDM/NewNode/tour/build/static/css/main.f51cd021.css",
+    "main.js": "https://joanmeca.github.io/ProyectoLDM/NewNode/tour/build/static/js/main.24200d60.js",
+    "static/js/453.475c2ec3.chunk.js": "https://joanmeca.github.io/ProyectoLDM/NewNode/tour/build/static/js/453.475c2ec3.chunk.js",
+    "index.html": "https://joanmeca.github.io/ProyectoLDM/NewNode/tour/build/index.html",
+    "main.f51cd021.css.map": "https://joanmeca.github.io/ProyectoLDM/NewNode/tour/build/static/css/main.f51cd021.css.map",
+    "main.24200d60.js.map": "https://joanmeca.github.io/ProyectoLDM/NewNode/tour/build/static/js/main.24200d60.js.map",
+    "453.475c2ec3.chunk.js.map": "https://joanmeca.github.io/ProyectoLDM/NewNode/tour/build/static/js/453.475c2ec3.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f51cd021.css",
-    "static/js/main.6d0e98d5.js"
+    "static/js/main.24200d60.js"
   ]
 }
