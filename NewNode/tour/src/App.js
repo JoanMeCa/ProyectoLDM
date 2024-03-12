@@ -56,10 +56,10 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="ProyectoLDM/NewNode/tour/build/" element={<Inicio />} />
-        <Route path="/puntos-interes" element={<Interes datos={PuntosInteresData} />} />
-        <Route path="/restaurantes" element={<Restaurant datos={RestaurantesData} />} />
-        <Route path="/hoteles" element={<Hotel datos={HotelesData} />} />
-        <Route path="/actividades" element={<Ocio datos={ActividadesData} />} />
+        <Route path="ProyectoLDM/NewNode/tour/build/puntos-interes" element={<Interes datos={PuntosInteresData} />} />
+        <Route path="ProyectoLDM/NewNode/tour/build/restaurantes" element={<Restaurant datos={RestaurantesData} />} />
+        <Route path="ProyectoLDM/NewNode/tour/build/hoteles" element={<Hotel datos={HotelesData} />} />
+        <Route path="ProyectoLDM/NewNode/tour/build/actividades" element={<Ocio datos={ActividadesData} />} />
       </Routes>
     </Router>
   );
