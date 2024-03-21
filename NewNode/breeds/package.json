@@ -15,7 +15,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "set PUBLIC_URL=https://joanmeca.github.io/ProyectoLDM/NewNode/tour/build/&&react-scripts build",
+    "build": "set PUBLIC_URL=https://joanmeca.github.io/ProyectoLDM/NewNode/breeds/build/&&react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
