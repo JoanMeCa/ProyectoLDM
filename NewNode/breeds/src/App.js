@@ -19,7 +19,7 @@ function App() {
         <div className="container-fluid p-0"> {/* Utiliza container-fluid para que ocupe todo el ancho */}
           <Routes>
             <Route path="/ProyectoLDM/NewNode/breeds/build/" element={<Breeds/>} />
-            <Route path="/ProyectoLDM/NewNode/breeds/build/detalles" element={<BreedDetails/>} />
+            <Route path="ProyectoLDM/NewNode/breeds/build/ProyectoLDM/NewNode/breeds/build/detalles" element={<BreedDetails/>} />
           </Routes>
         </div>
       </Router>
