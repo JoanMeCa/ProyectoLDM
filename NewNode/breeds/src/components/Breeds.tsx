@@ -91,7 +91,7 @@ const Breeds: React.FC = () => {
   );
 
   return (
-    <div className="container-fluid mt-4 min-vh-100"> {/* Usar la clase min-vh-100 para ajustar la altura al 100% */}
+    <div className="container-fluid mt-4 min-vh-100">
       <input
         type="text"
         placeholder="Buscar raza..."
@@ -104,7 +104,7 @@ const Breeds: React.FC = () => {
           <div key={i} className="col">
             <div className="card border-primary text-center hover-expansion bg-info h-100">
               <div className="card-body d-flex flex-column justify-content-between">
-                <Link to={`/detalles?raza_id=${raza.reference_image_id}`}>
+                <Link to={`ProyectoLDM/NewNode/breeds/build/detalles?raza_id=${raza.reference_image_id}`}>
                   <img 
                     src={imagenes[raza.id]}
                     className="card-img-top"

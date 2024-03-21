@@ -11,15 +11,15 @@ function App() {
           <div className="container">
             <ul className="navbar-nav">
               <li className="nav-item">
-                <Link className="nav-link" to="/">Listado</Link>
+                <Link className="nav-link" to="ProyectoLDM/NewNode/breeds/build/">Listado</Link>
               </li>
             </ul>
           </div>
         </nav>
         <div className="container-fluid p-0"> {/* Utiliza container-fluid para que ocupe todo el ancho */}
           <Routes>
-            <Route path="/" element={<Breeds/>} />
-            <Route path="/detalles" element={<BreedDetails/>} />
+            <Route path="/ProyectoLDM/NewNode/breeds/build/" element={<Breeds/>} />
+            <Route path="/ProyectoLDM/NewNode/breeds/build/detalles" element={<BreedDetails/>} />
           </Routes>
         </div>
       </Router>
