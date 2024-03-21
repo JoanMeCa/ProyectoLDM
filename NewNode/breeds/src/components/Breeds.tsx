@@ -1,5 +1,5 @@
-import React from 'react';
-import '../index.css';
+import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 export type Razas = Raza[]
@@ -51,38 +51,74 @@ export interface Weight {
   metric: string
 }
 
-export default function Breeds() {
-    const [razas, setRazas] = React.useState([] as Razas);
-    React.useEffect(() => {
-        fetch("https://api.thedogapi.com/v1/breeds", {
-            headers: {
-                "x-api-key": "live_0R7RrdvDgWQIS9kDPlF3ALcAJH3Fdr8WubyVSg10Iuj5MIKYF89IhzDDPMoSr084",
-            }
-        })
-        .then((response) => response.json())
-        .then((data: Razas) => {
-            setRazas(data)
+const Breeds: React.FC = () => {
+  const [razas, setRazas] = useState([] as Razas);
+  const [imagenes, setImagenes] = useState({} as Record<string, string>);
+  const [searchText, setSearchText] = useState('');
+
+  useEffect(() => {
+    fetch("https://api.thedogapi.com/v1/breeds", {
+      headers: {
+        "x-api-key": "live_0R7RrdvDgWQIS9kDPlF3ALcAJH3Fdr8WubyVSg10Iuj5MIKYF89IhzDDPMoSr084",
+      }
+    })
+    .then((response) => response.json())
+    .then((data: Razas) => {
+      setRazas(data);
+      const imageRequests = data.map(raza => {
+        return fetch(`https://api.thedogapi.com/v1/images/${raza.reference_image_id}?api_key=live_0R7RrdvDgWQIS9kDPlF3ALcAJH3Fdr8WubyVSg10Iuj5MIKYF89IhzDDPMoSr084`)
+          .then(response => response.json())
+          .then(imageData => {
+            return {
+              [raza.id]: imageData.url
+            };
+          });
+      });
+      Promise.all(imageRequests)
+        .then(imageDataArray => {
+          const imageMap = Object.assign({}, ...imageDataArray);
+          setImagenes(imageMap);
         });
-    }, []);
-    return (
-        <div className="container">
-          <div className="row row-cols-1 row-cols-md-5 g-4">
-            {razas.map((raza, i) => (
-              <div key={i} className="col">
-                <div className="card border-dark text-center hover-expansion" style={{ width: '100%', height: '100%' }}>
-                  <div className="card-body">
-                  <img
-              src={`https://api.thedogapi.com/v1/images/${raza.reference_image_id}?api_key=live_0R7RrdvDgWQIS9kDPlF3ALcAJH3Fdr8WubyVSg10Iuj5MIKYF89IhzDDPMoSr084`}
-              className="card-img-top"
-              alt={raza.name}
-            />
-                    <h5 className="card-title">{raza.name}</h5>
-                    {/* Agrega más elementos según sea necesario */}
-                  </div>
-                </div>
+    });
+  }, []);
+
+  const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setSearchText(e.target.value);
+  };
+
+  const filteredRazas = razas.filter(raza =>
+    raza.name.toLowerCase().includes(searchText.toLowerCase())
+  );
+
+  return (
+    <div className="container-fluid mt-4 min-vh-100"> {/* Usar la clase min-vh-100 para ajustar la altura al 100% */}
+      <input
+        type="text"
+        placeholder="Buscar raza..."
+        value={searchText}
+        onChange={handleSearchChange}
+        className="form-control mb-3"
+      />
+      <div className="row row-cols-1 row-cols-md-5 g-4">
+        {filteredRazas.map((raza, i) => (
+          <div key={i} className="col">
+            <div className="card border-primary text-center hover-expansion bg-info h-100">
+              <div className="card-body d-flex flex-column justify-content-between">
+                <Link to={`/detalles?raza_id=${raza.reference_image_id}`}>
+                  <img 
+                    src={imagenes[raza.id]}
+                    className="card-img-top"
+                    alt={raza.name}
+                  />
+                </Link>
+                <h5 className="card-title text-secondary">{raza.name}</h5>
               </div>
-            ))}
+            </div>
           </div>
-        </div>
-      );
-    };
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default Breeds;
