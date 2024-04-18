@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "https://joanmeca.github.io/ProyectoLDM/NewNode/camisetas/build/static/css/main.ff02f4b5.css",
+    "main.js": "https://joanmeca.github.io/ProyectoLDM/NewNode/camisetas/build/static/js/main.c4cf2056.js",
+    "static/js/453.4904cdf0.chunk.js": "https://joanmeca.github.io/ProyectoLDM/NewNode/camisetas/build/static/js/453.4904cdf0.chunk.js",
+    "index.html": "https://joanmeca.github.io/ProyectoLDM/NewNode/camisetas/build/index.html",
+    "main.ff02f4b5.css.map": "https://joanmeca.github.io/ProyectoLDM/NewNode/camisetas/build/static/css/main.ff02f4b5.css.map",
+    "main.c4cf2056.js.map": "https://joanmeca.github.io/ProyectoLDM/NewNode/camisetas/build/static/js/main.c4cf2056.js.map",
+    "453.4904cdf0.chunk.js.map": "https://joanmeca.github.io/ProyectoLDM/NewNode/camisetas/build/static/js/453.4904cdf0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ff02f4b5.css",
+    "static/js/main.c4cf2056.js"
+  ]
+}

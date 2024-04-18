@@ -1,0 +1,37 @@
+[
+    {
+      "nom": "Friendship",
+      "id": 1,
+      "activo": true,
+      "bio": "¡Siempre preparado para proteger a sus amigos!",
+      "imatgeUrl": "./Friendship.png"
+    },
+    {
+      "nom": "Harmony",
+      "id": 2,
+      "activo": true,
+      "bio": "¡El encargado de mantener la sinergia del equipo!",
+      "imatgeUrl": "./Harmony.png"
+    },
+    {
+      "nom": "P̶̢͗e̴͎̅͝ā̸̡̞́c̷̰͐͒͜è̷̙̕ Incredible Violence",
+      "id": 3,
+      "activo": true,
+      "bio": "No ha habido paz desde ese día...",
+      "imatgeUrl": "./Incredible Violence.png"
+    },
+    {
+      "nom": "Love",
+      "id": 4,
+      "activo": true,
+      "bio": "¡El corazón del grupo! ",
+      "imatgeUrl": "./Love.png"
+    },
+    {
+      "nom": "Ḥ̵͌͝ò̶͍̀̂́́͌̆̕͜p̷̩̄̔́͊̿̈́̽̈̐ẽ̸̱̦͕̲͇͖̜̊",
+      "id": 5,
+      "activo": false,
+      "bio": "N̵̖̞̼̜̱͙̈́̓͂̇̆̿̀̚o̴̪͙͋̎̇ ̶͓̠͈͓̎̽ͅm̸̢̡̢͎̰̰̲̿͌ͅe̷̗̹̹̠̅͛ř̴̹́̅̃ę̴̖̩̗͙́͂̈́̽c̴̝̥͌̽̑̍̓̉í̷̥̼͋́̊̒a̸̭̝̰̝͖͓̗͌͑̄͘ ̷̺͝m̸̱̪͇͔̝͋ő̷̠̝̯̎r̷̻̝̜̤͕̺̉͆ĩ̴̗͕͓̣͚́̾͜r̶̙̭̝̟̗͍̲̈́́͘͜",
+      "imatgeUrl": "https://upload.wikimedia.org/wikipedia/commons/0/02/Television_static.gif"
+    }
+  ]
